@@ -1,0 +1,18 @@
+<% provide(:title, t("help.help")) %>
+<!doctype html>
+<html lang="en">
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+</head>
+<body>
+  <%= link_to "English", locale: "en" %>
+  <%= link_to "Vietnamese", locale: "vi" %>
+  <h1><%= t "help.Help" %></h1>
+  <p>
+    <%= t "help.title1" %>
+    <%= link_to "Help page", "https://www.railstutorial.org/help" %>
+    <%= t "help.title2" %>
+    <%= link_to "Rails book", "https://www.railstutorial.org/book" %>
+  </p>
+</body>
+</html>
